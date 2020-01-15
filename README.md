@@ -3,7 +3,7 @@ Plugin module for MMM-CalendarExt and MMM-CalendarExt2, to display schedule plan
 
 
 ## Screenshot
-![]()
+![](https://raw.githubusercontent.com/eouia/MMM-CalendarExtPlan/master/screenshot.png)
 
 ## Install
 This module needs `MMM-CalendarExt` or `MMM-CalendarExt2` as source of events. (I recommend to use `MMM-CalendarExt2`)
