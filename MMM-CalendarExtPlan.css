@@ -1,0 +1,104 @@
+.CXP {
+  --cell-height: 60px;
+  --font-size: 14px;
+  --dayHeader-width: 100px;
+}
+
+.CXP .CellTable {
+  border:2px;
+  table-layout: fixed;
+}
+
+.CXP .CellTable * {
+  box-sizing: border-box;
+}
+
+.CXP .CellTable tr td {
+  font-size: var(--font-size);
+  line-height: 130%;
+  text-align: left;
+  overflow: hidden;
+}
+.CXP .CellTable tr th {
+  text-align:center;
+  color: White;
+  font-size: calc(var(--font-size) + 8px);
+}
+
+.CXP .CellTable tr th.day {
+  font-size: calc(var(--font-size) + 4px);
+  font-weight:bold;
+  color: White;
+  white-space: nowrap;
+  padding-left:10px;
+}
+
+.CXP .CellTable tr td .wrapper {
+  height: var(--cell-height);
+  padding:5px;
+}
+
+.CXP .CellTable .headerWidth {
+  width: var(--dayHeader-width);
+}
+
+.CXP .CellTable tr:nth-child(odd) {
+  background-color: rgba(66,66,66, 0.5)
+}
+
+.CXP .CellTable td:nth-child(even) {
+  background-color: rgba(66,66,66, 0.5)
+}
+
+.CXP .CellTable tr.weekday_6 {
+  background-color: rgba(0,0,127, 0.5)
+}
+
+.CXP .CellTable tr.weekday_7 {
+  background-color: rgba(127,0,0, 0.5)
+}
+
+.CXP .CellTable tr.today th {
+  color:#FF0;
+}
+
+.CXP .event {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.CXP .event .eventIcon {
+  margin-right: 5px;
+}
+
+.CXP .event div {
+  display:inline-block;
+}
+
+.CXP .event .eventTime .start.startHere,
+.CXP .event .eventTime .end.endHere {
+  display:inline-block;
+  margin-right: 5px;
+}
+
+.CXP .event .eventTime .end.endHere {
+  display:none;
+}
+
+.CXP .event .eventTime .start,
+.CXP .event .eventTime .end {
+  display:none;
+}
+
+.CXP .event .eventTime .end::before {
+  content: " - "
+}
+
+.CXP .event .eventTime.fullday {
+  display:none;
+}
+
+.CXP .event .eventTitle {
+  font-weight:bold;
+  color: White;
+}
